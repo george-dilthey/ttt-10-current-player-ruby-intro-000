@@ -1,6 +1,7 @@
 counter = 0
 def turn_count(board)
-  board.each{ |pos|
+  board.each { |pos|
+    puts pos
     if pos == 'X' || 'O'
       counter += 1
     end
