@@ -7,3 +7,13 @@ def turn_count(board)
   }
   return counter
 end
+
+def current_player(board)
+  board.each{ |pos|
+    if turn_count % 2 == 0
+      return 'X'
+    else
+      return 'O'
+    end
+  }
+end
